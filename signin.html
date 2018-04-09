@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>登录</title>
+	<link rel="stylesheet" type="text/css" href="https://at.alicdn.com/t/font_621592_4obzp0xdt74d9529.css">
+	<link rel="stylesheet" type="text/css" href="./common.css">
+</head>
+<body>
+	<header>
+		<a class="login" href="#">
+			<i class="iconfont icon-user"></i>
+		</a>
+	</header>
+	<main>
+		<div class="flip-modal login">
+			<div class="modal modal-login">
+				<a class="close href="#">
+					<i class="iconfont icon-close"></i>
+				</a>
+				<div class="tabs">
+					<a class="login active" href="#">登录</a>
+					<a class="register" href="#">注册</a>
+				</div>
+				<div class="content">
+					<div class="errormsg"></div>
+					<form action="/login" method="post">
+						<div class="input-field">
+							<i class="iconfont icon-name"></i>
+							<input type="text" name="username" placeholder="用户名">
+						</div>
+						<div class="input-field">
+							<i class="iconfont icon-lock"></i>
+							<input type="password" name="password" placeholder="密码">
+						</div>
+						<div class="input-field">
+							<input type="submit" value="登录">
+						</div>
+					</form>
+				</div>
+			</div>
+
+			<div class="modal modal-register">
+				<a class="close iconfont icon-close" href="#"></a>
+				<div class="tabs">
+					<a class="login" href="#">登录</a>
+					<a class="register active" href="#">注册</a>
+				</div>
+				<div class="content">
+					<div class="errormsg"></div>
+					<form action="/register" method="post">
+					    <div class="input-field">
+							<i class="iconfont icon-name"></i>
+							<input type="text" name="username" placeholder="输入用户名">
+						</div>
+						<div class="input-field">
+							<i class="iconfont icon-lock"></i>
+							<input type="password" name="password" placeholder="输入密码">
+						</div>
+						<div class="input-field">
+							<i class="iconfont icon-lock"></i>
+							<input type="password" name="password2" placeholder="再次输入密码">
+						</div>
+						<div class="input-field">
+							<input type="submit" value="注册">
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</main>
+	<script src="./main.js"></script>
+</body>
+</html>
